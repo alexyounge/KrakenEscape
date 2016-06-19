@@ -11,6 +11,13 @@ import android.view.View;
 public class ScrollingBackground extends View {
 
 	Bitmap bg;
+	
+	/**
+	 * This is the constructor for this particular view
+	 * 
+	 * @param context the current context of android
+	 * @param attrs a variable requied by the view superclass
+	 */
 	public ScrollingBackground(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		bg = BitmapFactory.decodeResource(getResources(),

@@ -8,6 +8,9 @@
 package eeecs.qub.ac.uk.gp13;
 
 public final class R {
+    public static final class anim {
+        public static final int instructionfail=0x7f040000;
+    }
     public static final class attr {
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -19,7 +22,8 @@ containing a value of this type.
         public static final int fontName=0x7f010000;
     }
     public static final class color {
-        public static final int white=0x7f070000;
+        public static final int black=0x7f080001;
+        public static final int white=0x7f080000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -29,93 +33,152 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int back=0x7f020000;
         public static final int canvasbg=0x7f020001;
         public static final int custombar1=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int ipanel=0x7f020004;
-        public static final int logo=0x7f020005;
-        public static final int port=0x7f020006;
-        public static final int portcon=0x7f020007;
-        public static final int porthtp=0x7f020008;
-        public static final int portopt=0x7f020009;
-        public static final int portstart=0x7f02000a;
-        public static final int title=0x7f02000b;
+        public static final int depthpanel=0x7f020003;
+        public static final int gameover=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int ipanel=0x7f020006;
+        public static final int livespanel=0x7f020007;
+        public static final int logo=0x7f020008;
+        public static final int panel=0x7f020009;
+        public static final int pausemenu=0x7f02000a;
+        public static final int port=0x7f02000b;
+        public static final int portcon=0x7f02000c;
+        public static final int porths=0x7f02000d;
+        public static final int porthtp=0x7f02000e;
+        public static final int portopt=0x7f02000f;
+        public static final int portrefresh=0x7f020010;
+        public static final int portstart=0x7f020011;
+        public static final int scorepanel=0x7f020012;
+        public static final int scorepanel1=0x7f020013;
+        public static final int speedpanel=0x7f020014;
+        public static final int title=0x7f020015;
+        public static final int yawpanel=0x7f020016;
     }
     public static final class id {
-        public static final int HTP_text_view=0x7f0a0013;
-        public static final int HTP_title_text_view=0x7f0a0012;
-        public static final int ViewPort=0x7f0a001b;
-        public static final int action_settings=0x7f0a001e;
-        public static final int all_control_object_button=0x7f0a0003;
-        public static final int all_control_object_dial=0x7f0a0007;
-        public static final int all_control_object_flipswitch=0x7f0a0004;
-        public static final int all_control_object_slidingswitch=0x7f0a0005;
-        public static final int all_control_object_xslider=0x7f0a0006;
-        public static final int all_control_object_yslider=0x7f0a0008;
-        public static final int button1=0x7f0a000a;
-        public static final int button2=0x7f0a000c;
-        public static final int button3=0x7f0a000e;
-        public static final int button4=0x7f0a0010;
-        public static final int container=0x7f0a0000;
-        public static final int high_button=0x7f0a0015;
-        public static final int htp_button=0x7f0a0017;
-        public static final int imageView1=0x7f0a001a;
-        public static final int instructionPanel=0x7f0a0002;
-        public static final int main_menu_start_game_btn=0x7f0a001c;
-        public static final int music_text=0x7f0a0018;
-        public static final int options_button=0x7f0a0016;
-        public static final int pager=0x7f0a001d;
-        public static final int progressBar1=0x7f0a0001;
-        public static final int start_button=0x7f0a0014;
-        public static final int switch1=0x7f0a0019;
-        public static final int textView1=0x7f0a0009;
-        public static final int textView2=0x7f0a000b;
-        public static final int textView3=0x7f0a000d;
-        public static final int textView4=0x7f0a000f;
-        public static final int textView5=0x7f0a0011;
+        public static final int HTP_text_view=0x7f0b0013;
+        public static final int HTP_title_text_view=0x7f0b0012;
+        public static final int ViewPort=0x7f0b0022;
+        public static final int action_settings=0x7f0b002f;
+        public static final int all_control_object_button=0x7f0b0003;
+        public static final int all_control_object_dial=0x7f0b0007;
+        public static final int all_control_object_flipswitch=0x7f0b0004;
+        public static final int all_control_object_slidingswitch=0x7f0b0005;
+        public static final int all_control_object_xslider=0x7f0b0006;
+        public static final int all_control_object_yslider=0x7f0b0008;
+        public static final int btn_menu=0x7f0b002b;
+        public static final int btn_pausemenu=0x7f0b002e;
+        public static final int btn_resume=0x7f0b002d;
+        public static final int button1=0x7f0b000a;
+        public static final int button2=0x7f0b000c;
+        public static final int button3=0x7f0b000e;
+        public static final int button4=0x7f0b0010;
+        public static final int container=0x7f0b0000;
+        public static final int dialogtext=0x7f0b002a;
+        public static final int difficulty_text=0x7f0b001d;
+        public static final int fragment_main_game_depthtext=0x7f0b0026;
+        public static final int fragment_main_game_livestext=0x7f0b0024;
+        public static final int fragment_main_game_scoretext=0x7f0b0023;
+        public static final int fragment_main_game_speedtext=0x7f0b0025;
+        public static final int fragment_main_game_yawtext=0x7f0b0027;
+        public static final int high_button=0x7f0b0017;
+        public static final int highscores=0x7f0b002c;
+        public static final int htp_button=0x7f0b0019;
+        public static final int imageView1=0x7f0b0020;
+        public static final int instructionPanel=0x7f0b0002;
+        public static final int leaderboard_fragment_leaderboardText=0x7f0b0014;
+        public static final int leaderboard_fragment_refreshButton=0x7f0b0015;
+        public static final int main_menu_start_game_btn=0x7f0b0028;
+        public static final int mainlayout=0x7f0b0021;
+        public static final int music_text=0x7f0b001a;
+        public static final int options_button=0x7f0b0018;
+        public static final int pager=0x7f0b0029;
+        public static final int progressBar1=0x7f0b0001;
+        public static final int radioDiff=0x7f0b001c;
+        public static final int radioEasy=0x7f0b001e;
+        public static final int radioHard=0x7f0b001f;
+        public static final int start_button=0x7f0b0016;
+        public static final int switch1=0x7f0b001b;
+        public static final int textView1=0x7f0b0009;
+        public static final int textView2=0x7f0b000b;
+        public static final int textView3=0x7f0b000d;
+        public static final int textView4=0x7f0b000f;
+        public static final int textView5=0x7f0b0011;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int all_control_object_fragment=0x7f030001;
         public static final int command_tester=0x7f030002;
         public static final int frag_htp=0x7f030003;
-        public static final int frag_menu=0x7f030004;
-        public static final int frag_opt=0x7f030005;
-        public static final int frag_start=0x7f030006;
-        public static final int fragment_main_game=0x7f030007;
-        public static final int fragment_main_menu=0x7f030008;
-        public static final int fragment_pager=0x7f030009;
-        public static final int layout_splash=0x7f03000a;
+        public static final int frag_leaderboard=0x7f030004;
+        public static final int frag_menu=0x7f030005;
+        public static final int frag_opt=0x7f030006;
+        public static final int frag_start=0x7f030007;
+        public static final int fragment_main_game=0x7f030008;
+        public static final int fragment_main_menu=0x7f030009;
+        public static final int fragment_pager=0x7f03000a;
+        public static final int gameoverdialog=0x7f03000b;
+        public static final int layout_splash=0x7f03000c;
+        public static final int pausemenufragment=0x7f03000d;
     }
     public static final class menu {
-        public static final int main_menu=0x7f090000;
+        public static final int main_menu=0x7f0a0000;
     }
     public static final class raw {
-        public static final int theme=0x7f040000;
+        public static final int buttonoff=0x7f050000;
+        public static final int buttonon=0x7f050001;
+        public static final int buttonpush=0x7f050002;
+        public static final int dialfx=0x7f050003;
+        public static final int htpfx=0x7f050004;
+        public static final int krakenkrieg=0x7f050005;
+        public static final int lose=0x7f050006;
+        public static final int optfx=0x7f050007;
+        public static final int scorefx=0x7f050008;
+        public static final int slider=0x7f050009;
+        public static final int startfx=0x7f05000a;
+        public static final int theme=0x7f05000b;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
-        public static final int highButton=0x7f060008;
-        public static final int howToPlay=0x7f06000b;
-        public static final int htpButton=0x7f060010;
-        public static final int josh_main_menu_control_objects_button_string=0x7f060004;
-        public static final int logo=0x7f06000e;
-        public static final int menu_back=0x7f060007;
-        public static final int musicIO=0x7f06000c;
-        public static final int musicText=0x7f06000a;
-        public static final int optButton=0x7f060009;
-        public static final int splash=0x7f06000d;
-        public static final int start=0x7f060005;
-        public static final int startButton=0x7f060006;
-        public static final int start_game=0x7f060003;
-        public static final int title=0x7f06000f;
+        public static final int action_settings=0x7f070002;
+        public static final int app_name=0x7f070000;
+        public static final int dial=0x7f07001e;
+        public static final int difficultyText=0x7f07000d;
+        public static final int easyText=0x7f07000e;
+        public static final int flipswitch=0x7f07001b;
+        public static final int hardText=0x7f07000f;
+        public static final int hello_world=0x7f070001;
+        public static final int highButton=0x7f070008;
+        public static final int highScoreButton=0x7f070016;
+        public static final int horizontalslider=0x7f070019;
+        public static final int howToPlay=0x7f07000b;
+        public static final int htpButton=0x7f070013;
+        public static final int josh_main_menu_control_objects_button_string=0x7f070004;
+        public static final int leaderboardButton=0x7f070014;
+        public static final int leaderboard_fragment_refreshButton=0x7f07001f;
+        public static final int logo=0x7f070011;
+        public static final int menuButton=0x7f070015;
+        public static final int menu_back=0x7f070007;
+        public static final int musicIO=0x7f07000c;
+        public static final int musicText=0x7f07000a;
+        public static final int optButton=0x7f070009;
+        public static final int resume=0x7f070017;
+        /**  Missing Content ID tags for Main Game Fragment Image Views 
+         */
+        public static final int scrollingview=0x7f070018;
+        public static final int slideswitch=0x7f07001d;
+        public static final int splash=0x7f070010;
+        public static final int start=0x7f070005;
+        public static final int startButton=0x7f070006;
+        public static final int start_game=0x7f070003;
+        public static final int title=0x7f070012;
+        public static final int vertflipswitch=0x7f07001c;
+        public static final int vertslider=0x7f07001a;
     }
     public static final class style {
         /** 
@@ -139,29 +202,29 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f090001;
     }
     public static final class styleable {
-        /** Attributes that can be used with a instructionPanel.
+        /** Attributes that can be used with a customTextView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #instructionPanel_fontName eeecs.qub.ac.uk.gp13:fontName}</code></td><td></td></tr>
+           <tr><td><code>{@link #customTextView_fontName eeecs.qub.ac.uk.gp13:fontName}</code></td><td></td></tr>
            </table>
-           @see #instructionPanel_fontName
+           @see #customTextView_fontName
          */
-        public static final int[] instructionPanel = {
+        public static final int[] customTextView = {
             0x7f010000
         };
         /**
           <p>This symbol is the offset where the {@link eeecs.qub.ac.uk.gp13.R.attr#fontName}
-          attribute's value can be found in the {@link #instructionPanel} array.
+          attribute's value can be found in the {@link #customTextView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -172,6 +235,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name eeecs.qub.ac.uk.gp13:fontName
         */
-        public static final int instructionPanel_fontName = 0;
+        public static final int customTextView_fontName = 0;
     };
 }
